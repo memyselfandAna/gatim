@@ -1,0 +1,243 @@
+
+* {
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
+  }
+  body {
+    display: flex;
+    min-height: 60vw;
+    flex-direction: row;
+    margin: 0;
+  }
+  .outer-col-1 {
+    background: rgba(203, 246, 32, 0.844);
+    flex: 1;
+    max-width: 30vw;
+  }
+  .outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+  }
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .inner-col {
+    flex: 4;
+  }
+  .inner-row article {
+    min-height: 70vh;
+  }
+  .inner-row aside {
+    background:rebeccapurple;
+    flex: 6;
+  }
+  .navbar-toggler {
+    padding: 0.5rem 0.75;
+  }
+  
+  header, footer {
+    background: yellowgreen;
+    height: 40vh;
+    min-width: 70vw;  
+  }
+  .article {
+    max-width: 90vw;
+    min-height:100vh;
+  }
+  
+  .main-header {
+    background-color: rgba(203, 246, 32, 0.844);
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom:20px;
+    }
+   
+    .nume-blog {
+      position: relative;
+      text-align: center;
+      color: white;
+    } 
+  
+    .nume-blog > img {
+      object-fit: cover;
+      width: 100%;
+    }
+  
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 4vh;
+      font-weight: bolder;
+      text-shadow:2px 2px #fff ;
+      color:crimson;
+      font-family: 'Cassandra Personal Use', sans-serif;
+      text-shadow:2px 2px #000 ;
+      color:rgba(203, 246, 32, 0.844);
+    }
+    
+    .centered:hover {
+      color:rgb(220, 0, 0, 0.800);
+      font-size: 4.4vh;
+      transition: .3s;
+  
+    }
+
+    .article-btn {
+      width: 98%;
+      font-family:inherit;
+      height: 8vh;
+      margin-top: 6vh;
+      margin-left: 2vw;
+    }
+    .btn {
+      margin-left: .8vw;
+      margin-top: .8vw;
+      min-width: 8vw;
+      max-width: 8vw; 
+    }
+  
+    /* img {
+      width: 10vw;
+      margin-left: 1em;
+    } */
+  
+    /* AICI AM ADAUGAT CLASA ASTA*/
+    .navbar-expand-md .navbar-nav .nav-link {
+      padding-right: initial;
+      padding-top: 1%;
+      margin-top: 20px;
+      font-size: 1vw;
+      /* font-weight: bold; */
+      font-family: Forte !important;
+      color: rgb(37, 184, 10);
+      align-items: flex-start;
+      
+    }
+  
+    .nav-img img {
+      min-width: 10vw;
+      padding-right: 3vw;
+      box-sizing:initial;
+      width: 100%;
+      height: auto;
+    }
+  
+    li a:hover {
+      background-color:transparent ;
+      color:blueviolet !important;
+    }
+    
+    .zoom {
+      /* padding: 50px; */
+      background-color:transparent;
+      transition: transform .2s; /* Animation */
+      /* width: 200px; */
+      /* height: 200px; */
+      margin: 0 auto;
+    }
+    
+    .zoom:hover {
+      transform: scale(1);
+    }
+  
+    .card {
+      margin-top: .5vw;
+      margin-right: .5vw;
+      }
+  
+     .middle {
+    display:flex;
+  
+  }
+
+  
+  @media only screen and (max-width: 700px) {
+      .article {
+        max-width: 90vw;
+        min-height:100vh;
+      }
+      .article-btn {
+        font-family:inherit;
+        height:90%;
+        align-items: center;
+        margin-left: 8vw;
+        margin-top: 2vh;
+      }
+      .btn {
+        margin-left: 3vw;
+        margin-top: 3vh;
+        min-width: 20vw;
+        font-family: inherit;
+      } 
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size:3vh;
+      }
+
+      .centered:hover {
+        color:rgb(220, 0, 0, 0.800);
+        font-size: 4.4vh;
+        transition: .3s;
+    
+      }
+    
+      .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: initial;
+        padding-top: 1%;
+        margin-top: 20px;
+        font-size: 2vw;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(37, 184, 10);
+        align-items: flex-start;
+      }
+  
+  
+      /* AICI AM MODIFICAT - STERS DUBLURA, ADAUGAT PARAMETRII LA .nav-img img*/
+      /* .nav-img {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 1vh;
+        margin-left: 2em;
+      } */
+  
+      .nav-img img {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-right: auto;   
+        min-width: 10vw;
+        padding-right: 2vw;
+        box-sizing:initial;
+        width: 100%;
+        height: auto;
+      }
+  
+      header, footer {
+        background: yellowgreen;
+        height: 30vh;
+        min-width: 70vw;
+        max-height: 10vh;   
+      }
+  
+      .card {
+        margin-top: 8vw;
+        margin-bottom: 4vw;
+        }
+     
+        .middle {
+          display: flex;
+          flex-wrap: wrap;
+          margin-right: 3.5vw;
+          margin-top:1vw;
+         
+        } 
+    }
+
+    

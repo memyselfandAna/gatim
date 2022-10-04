@@ -7,6 +7,7 @@ urlpatterns = [
     path('retete', views.retete, name='retete'),
     path('condimente', views.condimente, name='condimente'),
     path('blog', views.blog, name='blog'),
+    path('join', views.join, name='join'), 
 ]
 
 urlpatterns += staticfiles_urlpatterns()

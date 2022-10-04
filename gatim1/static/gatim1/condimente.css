@@ -141,7 +141,7 @@
     }
     
     .zoom:hover {
-      transform: scale(1);
+      transform: scale(1.5vw);
     }
   
     .card {

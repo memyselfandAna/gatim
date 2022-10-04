@@ -16,3 +16,6 @@ def blog(request):
 def retete(request):
     retete_ok = Retete.objects.all().order_by('date')
     return render(request, 'retete.html', {'retete_ok':retete_ok})
+
+def join(request):
+    return render(request, 'login-box.html', {})

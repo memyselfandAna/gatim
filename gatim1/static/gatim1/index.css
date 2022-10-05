@@ -30,7 +30,7 @@ body {
   min-height: 70vh;
 }
 .inner-row aside {
-  background:rebeccapurple;
+  background:darkorange;
   flex: 6;
 }
 .navbar-toggler {
@@ -100,6 +100,27 @@ header, footer {
     max-width: 8vw;
     font-family: Forte !important; 
   }
+
+  .btn-light {
+    margin-left: 1vw;
+    margin-top: 3.8vw;
+    min-width: 8vw;
+    max-width: 11vw;
+    font-family: Forte !important;
+    font-size: 1.5vw !important;
+    background-color: darkorange !important;
+  }
+
+
+.btn-light:hover {
+  color: #000;
+  background-color: #03e9f4 !important;
+  border-color: #0d0af9;
+  box-shadow: 0 0 5px #03e9f4, 
+                  0 0 25px #03e9f4, 
+                  0 0 50px #03e9f4,
+                  0 0 100px #03e9f4 !important;
+}
 
   /* img {
     width: 10vw;

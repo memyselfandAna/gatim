@@ -6,13 +6,13 @@ input:-webkit-autofill:active {
 }
 
   .login-box {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
-    width: 400px;
+    width: 25em;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.5) !important;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
@@ -21,7 +21,7 @@ input:-webkit-autofill:active {
   .login-box h2 {
     margin: 0 0 30px;
     padding: 0;
-    color: #fff;
+    color:  rgba(0,0,0,.5);
     text-align: center;
   }
   
@@ -33,7 +33,7 @@ input:-webkit-autofill:active {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color: rgba(0,0,0,.5);
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #fff;

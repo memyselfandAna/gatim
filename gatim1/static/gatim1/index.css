@@ -30,7 +30,7 @@ body {
   min-height: 70vh;
 }
 .inner-row aside {
-  background:darkorange;
+  background:#81B214;
   flex: 6;
 }
 .navbar-toggler {
@@ -108,26 +108,47 @@ header, footer {
     max-width: 11vw;
     font-family: Forte !important;
     font-size: 1.5vw !important;
-    background-color: darkorange !important;
+    background-color:peachpuff !important;
   }
 
 
 .btn-light:hover {
-  color: #000;
-  background-color: #03e9f4 !important;
-  border-color: #0d0af9;
-  box-shadow: 0 0 5px #03e9f4, 
-                  0 0 25px #03e9f4, 
-                  0 0 50px #03e9f4,
-                  0 0 100px #03e9f4 !important;
+  color:#DCEDC8 !important;
+  border: #EF4339 !important;
+  background-color:#EF4339 !important;
+  border-color:#EF4339 ;
+  box-shadow: 0 0 5px #EF4339 , 
+                  0 0 25px #EF4339 , 
+                  0 0 50px #EF4339 ,
+                  0 0 100px #EF4339  !important;
 }
 
+.form-text {
+  margin-top: -.5rem !important;
+  font-size: .7em !important;
+  color: #03e9f4 !important;
+  
+}
+
+.login-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 25em;
+  padding: 35px;
+  margin-top: 2%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5) !important;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+  border-radius: 10px;
+}
   /* img {
     width: 10vw;
     margin-left: 1em;
   } */
 
-  /* AICI AM ADAUGAT CLASA ASTA*/
+
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: initial;
     padding-top: 1%;

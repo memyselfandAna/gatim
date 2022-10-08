@@ -18,4 +18,4 @@ def retete(request):
     return render(request, 'retete.html', {'retete_ok':retete_ok})
 
 def join(request):
-    return render(request, 'login-box.html', {})
+    return render(request, 'index.html', {})

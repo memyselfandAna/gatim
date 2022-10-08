@@ -128,41 +128,91 @@
   <footer>Footer</footer>
   </div>
   <aside>
-    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Autentificare</button>
-    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Inregistrare</button>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-   <div class="modal-dialog">
-    <div class="modal-content">
-      <!-- <div class="modal-header"> -->
-        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Logare</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-      <!-- </div> -->
-    <div class="modal-body">
-     <div class="login-box">
-        <form action="." method="post" autocomplete="off">
-        <div class="user-box">
-          <input type="text" name="" required="" autocomplete="off">
-          <label>Utilizator</label>
+    <div class="autentificare">
+    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@mdo">Autentificare</button>
+    <!-- <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Inregistrare</button> -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-body"> <center><h4><i>Bine ai revenit "incepator in bucatarie"!</i></h4></center>
+        <div class="login-box">
+          <form action="." method="post" autocomplete="off">{% csrf_token %}
+            
+          <div class="user-box">
+            <input type="text" name="" required="" autocomplete="off">
+            <label>Utilizator</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" required="" autocomplete="off">
+            <label>Parola</label>
+          </div>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Autentificare
+          </a>
+          </form>
         </div>
-        <div class="user-box">
-          <input type="password" name="" required="" autocomplete="off">
-          <label>Parola</label>
-        </div>
-        <a href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Autentificare
-        </a>
-        </form>
       </div>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div> -->
     </div>
- </div>
-</div>
+    </div>
+    </div>
+    <div class="inregistrare">
+    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@mdo">Inregistrare</button>
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body"> <h3><center><i>Bine ai venit "incepator in bucatarie"!</i></center></h3>
+              <div class="login-box">
+                <form action="." method="post" autocomplete="off">{% csrf_token %}
+                  <!-- <div class="mb-3"> -->
+                      <div class="user-box">
+                        <input type="text" name="" required="" autocomplete="off" name="fname">
+                        <label>Prenume</label>
+                      </div>
+                  <!-- </div> -->
+                  <!-- <div class="mb-3"> -->
+                    <div class="user-box">
+                      <input type="text" name="" required="" autocomplete="off" name="lname">
+                      <label>Nume</label>
+                    </div>
+                  <!-- </div> -->
+                  <!-- <div class="mb-3"> -->
+                    <div class="user-box">
+                      <input type="text" name="" required="" autocomplete="off" name="age">
+                      <label>Varsta</label>
+                    </div>
+                  <!-- </div> -->
+                  <!-- <div class="mb-3"> -->
+                    <div class="user-box">
+                      <input type="email" name="" required="" autocomplete="off" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                      <label>Email</label>
+                    </div>  
+                  <!-- </div> -->
+                  <!-- <div class="mb-3"> -->
+                    <div class="user-box">
+                      <input type="password"  name="" required="" autocomplete="off" id="exampleInputPassword1" name="passwd">
+                      <label>Parola</label>
+                    </div>  
+                  <!-- </div> -->
+                  <center>
+                    <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Inregistreaza-te
+                    </a><br><br>
+                    <div id="emailHelp" class="form-text"><i>Stai linistit/a, datele tale sunt in siguranta cu noi.</i>😉</div> 
+                  </center> 
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
   </aside>
   </div>
   </div>

@@ -33,8 +33,8 @@ input:-webkit-autofill:active {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: rgba(0,0,0,.5);
-    margin-bottom: 30px;
+    color: antiquewhite;
+    margin-bottom: 2px !important;
     border: none;
     border-bottom: 1px solid #fff;
     outline: none;
@@ -44,7 +44,7 @@ input:-webkit-autofill:active {
     position: absolute;
     top:0;
     left: 0;
-    padding: 10px 0;
+    padding: 16px 0;
     font-size: 16px;
     color: #fff;
     pointer-events: none;

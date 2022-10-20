@@ -105,49 +105,88 @@
       margin-left: 1em;
     } */
   
-    /* AICI AM ADAUGAT CLASA ASTA*/
-    .navbar-expand-md .navbar-nav .nav-link {
-      padding-right: initial;
-      padding-top: 1%;
-      margin-top: 20px;
-      font-size: 1vw;
-      /* font-weight: bold; */
-      font-family: Forte !important;
-      color: rgb(37, 184, 10);
-      align-items: flex-start;
-      
-    }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: initial;
+    padding-top: 1%;
+    margin-top: 20px;
+    font-size: 1vw;
+    /* font-weight: bold; */
+    font-family: Forte !important;
+    color: rgb(37, 184, 10);
+    align-items: flex-start;  
+  }
   
-    .nav-img img {
-      min-width: 10vw;
-      padding-right: 3vw;
-      box-sizing:initial;
-      width: 100%;
-      height: auto;
-    }
+  .nav-img img {
+    min-width: 10vw;
+    padding-right: 3vw;
+    box-sizing:initial;
+    width: 100%;
+    height: auto;
+  }
   
-    li a:hover {
-      background-color:transparent ;
-      color:crimson !important;
-    }
-    
-    .zoom {
-      /* padding: 50px; */
-      background-color:transparent;
-      transition: transform .2s; /* Animation */
-      /* width: 200px; */
-      /* height: 200px; */
-      margin: 0 auto;
-    }
-    
-    .zoom:hover {
-      transform: scale(1.5);
-    }
+  li a:hover {
+    background-color:transparent ;
+    color:crimson !important;
+  }
   
-    .card {
-      margin-top: .5vw;
-      margin-right: .5vw;
-      }
+  .zoom {
+    /* padding: 50px; */
+    background-color:transparent;
+    transition: transform .2s; /* Animation */
+    /* width: 200px; */
+    /* height: 200px; */
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5);
+  }
+
+  .card {
+    margin-top: .5vw;
+    margin-right: .5vw;
+    }
+
+  .container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+    }
+
+  .Box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px #0000;
+    line-height: 0;
+  }
+
+  .box >img {
+    width: 200%;
+    height: calc(100% -5vh);
+    object-fit: cover;
+    transition: .1s;
+  }
+
+  .box > span{
+    font-size:  3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+
+  .box:hover {
+    flex: 1 1 100%;
+  }
+
+  .box:hover > img {
+    height: 100%;
+    width: 100%;
+  }
   
   
   @media only screen and (max-width: 700px) {

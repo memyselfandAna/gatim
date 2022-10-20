@@ -3,7 +3,7 @@ from .models import Members
 
 
 
-class Menberform(forms.Modelform):
+class MemberForm(forms.ModelForm):
     class Meta:
         model = Members
         fields = ['fname', 'lname', 'email', 'passwd', 'age']
